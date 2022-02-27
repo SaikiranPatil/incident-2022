@@ -9,3 +9,11 @@ ScrollOut();
 function navbarToggleFun() {
     document.getElementById('navbar').classList.toggle('open');
 }
+
+onLoad = () => {
+    var preloader = document.getElementById("preloader");
+
+    setTimeout(() => {
+        preloader.style.display = "none";
+    }, 500);
+}
